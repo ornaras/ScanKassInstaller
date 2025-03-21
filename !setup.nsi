@@ -94,13 +94,13 @@ Section "Uninstall"
   DeleteRegKey HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ScanKass"
 SectionEnd
 
-!define MUI_UNICON logo.ico
-!define MUI_ICON logo.ico
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP banner.bmp
-!define MUI_WELCOMEFINISHPAGE_BITMAP banner.bmp
+!define MUI_UNICON resources\logo.ico
+!define MUI_ICON resources\logo.ico
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP resources\banner.bmp
+!define MUI_WELCOMEFINISHPAGE_BITMAP resources\banner.bmp
 
 !insertmacro MUI_PAGE_WELCOME
-!insertmacro MUI_PAGE_LICENSE license.txt
+!insertmacro MUI_PAGE_LICENSE resources\license.txt
 !insertmacro MUI_PAGE_COMPONENTS
 !insertmacro MUI_PAGE_INSTFILES
 !insertmacro MUI_PAGE_FINISH
